@@ -1,0 +1,33 @@
+grep list * -1R
+Binary file Documents/TT3 - Stacks and Queues.pdf matches
+--
+Downloads/Untitled Document 1-[sudo] password for quangtyt: 
+Downloads/Untitled Document 1:Reading package lists... Done
+Downloads/Untitled Document 1-Building dependency tree       
+--
+os2018/.git/hooks/pre-push.sample-		# Check for WIP commit
+os2018/.git/hooks/pre-push.sample:		commit=`git rev-list -n 1 --grep '^WIP' "$range"`
+os2018/.git/hooks/pre-push.sample-		if [ -n "$commit" ]
+--
+os2018/.git/hooks/pre-rebase.sample-# Is topic fully merged to master?
+os2018/.git/hooks/pre-rebase.sample:not_in_master=`git rev-list --pretty=oneline ^master "$topic"`
+os2018/.git/hooks/pre-rebase.sample-if test -z "$not_in_master"
+--
+os2018/.git/hooks/pre-rebase.sample-# Is topic ever merged to next?  If so you should not be rebasing it.
+os2018/.git/hooks/pre-rebase.sample:only_next_1=`git rev-list ^master "^$topic" ${publish} | sort`
+
+$ wc -l /etc/passwd
+40 /etc/passwd
+
+$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:           7768        1158        5355         284        1255        6042
+Swap:             0           0           0
+
+
+$ grep -m 1 'cpu cores' /proc/cpuinfo
+cpu cores	: 2
+
+$ find -iname "*.jpg"
+./Bc00R5dCcAI6u2v.jpg
+
