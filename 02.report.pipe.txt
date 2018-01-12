@@ -1,8 +1,10 @@
-hoangvu@npta:~$ ls
+~$ ls
 Desktop    examples.desktop                        os2018    Templates
 Documents  google-chrome-stable_current_amd64.deb  Pictures  Videos
 Downloads  Music                                   Public
-hoangvu@npta:~$ ls | grep list
+
+$ ls | grep list
+
 $ wc -l /etc/passwd
 40 /etc/passwd
 
