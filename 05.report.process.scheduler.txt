@@ -1,0 +1,18 @@
+$ cat /proc/sched_debug | grep "systemd" | awk '{print $2}'
+517
+604
+1196
+1
+249
+268
+
+$ cat /proc/1/sched | grep switches 
+nr_switches                                  :                 1550
+nr_voluntary_switches                        :                 1174
+nr_involuntary_switches                      :                  376
+
+$ cat /proc/249/sched | grep switches
+nr_switches                                  :                  729
+nr_voluntary_switches                        :                  703
+nr_involuntary_switches                      :                   26
+
