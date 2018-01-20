@@ -1,0 +1,7 @@
+$ ps -A
+3031 ?        00:00:06 firefox
+
+$ ps -o nlwp 3031
+NLWP
+  49
+
