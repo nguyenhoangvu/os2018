@@ -17,7 +17,8 @@ int last = 0;
 
 void produce(item *i){
 	while ((first + 1) % BUFFER_SIZE == last){
-	}
+		return;
+}
 	memcpy(&buffer[first], i, sizeof(item));
 	first = (first + 1) % BUFFER_SIZE;
 }
@@ -26,6 +27,7 @@ void produce(item *i){
 item *consume() {
 	item *i = malloc(sizeof(item));
 	while (first == last) {
+		return;
 	}
 	memcpy(i, &buffer[last], sizeof(item));
 	last = (last + 1) % BUFFER_SIZE;
